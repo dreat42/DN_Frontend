@@ -1,0 +1,264 @@
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.TopRow {
+  flex: 0 0 auto;
+  text-align: center;
+}
+.BottomRow {
+  flex: 1 1 auto;
+}
+
+.Panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.PanelContent_third {
+  width: 100%;
+  background-color: var(--color-panel-background);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  font-size: 19px;
+  margin: 0;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+  overflow-y: scroll;
+}
+
+.PanelContent_second {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #7feec5, #2e753f);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.PanelContent_first {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: linear-gradient(45deg, #e4dc66, #e07e4d);
+  font-size: 86px;
+}
+
+.ResizeHandleOuter {
+  flex: 0 0 1.5em;
+  position: relative;
+  outline: none;
+  --background-color: transparent;
+}
+.ResizeHandleOuter[data-resize-handle-active] {
+  --background-color: var(--color-solid-resize-bar-handle);
+}
+
+.ResizeHandleInner {
+  position: absolute;
+  top: 0.25em;
+  bottom: 0.25em;
+  left: 0.25em;
+  right: 0.25em;
+  border-radius: 0.25em;
+  background-color: var(--background-color);
+  transition: background-color 0.2s linear;
+}
+
+.Button {
+  color: var(--color-default);
+  background-color: var(--color-button-background);
+  border: 1px solid var(--color-button-border);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+.Button:hover {
+  background-color: var(--color-button-background-hover);
+}
+
+.Link {
+  display: block;
+  color: var(--color-link);
+  margin-bottom: 0.5rem;
+}
+
+.Icon {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  left: calc(50% - 0.5rem);
+  top: calc(50% - 0.5rem);
+}
+
+.PanelContent_third table {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+
+.PanelContent_third th,
+.PanelContent_third td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff6a;
+  font-size: 25px;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PanelContent_second {
+  width: 100%;
+}
+
+.PanelContent_second h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.PanelContent_second form {
+  width: 100%;
+}
+
+.PanelContent_second label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.PanelContent_second input[type="text"],
+.PanelContent_second input[type="number"],
+.PanelContent_second select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.PanelContent_second select {
+  width: 100%;
+}
+
+.PanelContent_second button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.PanelContent_second button:hover {
+  background-color: #45a049;
+}
+
+.PanelContent_second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PanelContent_second h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.PanelContent_second form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.PanelContent_second label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.PanelContent_second input[type="text"],
+.PanelContent_second input[type="number"],
+.PanelContent_second select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.PanelContent_second select {
+  width: 100%;
+}
+
+.PanelContent_second .left {
+  width: calc(50% - 20px);
+}
+
+.PanelContent_second .right {
+  width: calc(50% - 20px);
+}
+
+.PanelContent_second button {
+  width: 100%;
+  background-color: rgb(234, 234, 227);
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.PanelContent_second button.add:hover {
+  background-color: rgb(155, 155, 153);
+  color: white;
+}
+
+.PanelContent_second button.update:hover {
+  background-color: rgb(155, 155, 153);
+  color: white;
+}
+
+.PanelContent_second .buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formContent {
+  width: 80%;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  width: calc(100% - 16px);
+}
